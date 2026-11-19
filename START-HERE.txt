@@ -1,0 +1,40 @@
+ASK TUTOR — CONSOLIDATED PROJECT (October 2026)
+
+IMPORTANT: Keep your original folder as a backup until you verify this copy.
+
+1. Extract this ZIP to a NEW folder, e.g. Pictures\AskTutor-Clean.
+2. Double-click Open-AskTutor.bat inside the extracted tutor-project-one folder.
+3. On the first run, Python 3 and an internet connection are needed to install Python packages.
+4. The launcher opens http://127.0.0.1:5500/login.html. Log in normally.
+5. To create Open AskTutor.exe on Windows, right-click Build-AskTutor-EXE.ps1 and run with PowerShell,
+   or run: powershell -ExecutionPolicy Bypass -File .\Build-AskTutor-EXE.ps1
+   The EXE launches the same batch file; it does not bundle Python or the backend.
+
+IMPORTANT: Port 8001 must belong to this project's backend. If another Ask Tutor copy
+is already running, CLOSE its backend and frontend terminal windows before starting this copy.
+
+WHAT WAS CONSOLIDATED
+- One frontend/dashboard.html (the advanced visual-learning dashboard).
+- Original login/signup/teacher/parent pages preserved.
+- Duplicate dashboards moved to legacy_dashboard_backups for safety.
+- Two duplicate Windows Python environments omitted. First-run launcher recreates .venv.
+- Existing users.db and learner JSON data preserved. These are PRIVATE: do not share ZIP publicly.
+
+FEATURES
+- Student-specific subject progress, stored after new assessed answers.
+- Objective (multiple-choice) practice generated from matching curriculum chunks.
+- Written practice, with image/PDF/DOCX/TXT upload to extract answer text for review before submission.
+- Subject-based library: reviewed offline lessons if present, plus clearly labeled external free references.
+- Enter key submits questions; visual-learning features preserved from advanced dashboard.
+
+LIMITATIONS
+- The included curriculum has only a small set of subject/topic chunks, not full curricula.
+- No licensed or officially approved subject textbooks were included in the original project.
+  We do not invent approvals or distribute copyrighted books without permission.
+- Offline lesson discovery may return none because the uploaded project contains no reviewed lesson files.
+- Objective question generation and answer assessment require the configured local Ollama model.
+- OCR needs the installed extraction dependencies, and handwriting recognition accuracy varies.
+- Progress is a prototype heuristic, not validated learning-outcome measurement.
+- Old practice attempts lacking a recorded subject cannot be safely assigned retrospectively.
+- This ZIP has been statically checked and unit-tested on Linux; Windows launcher and end-to-end
+  Ollama/OCR operation must still be verified on the user's Windows PC.

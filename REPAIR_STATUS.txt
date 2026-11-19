@@ -1,0 +1,9 @@
+Ask Tutor teacher workflow incremental repair - 2026-10-23
+
+Changed: restart teacher command, hint/repeat-question support, continuation wording, handling of local LLM OS/runtime errors.
+Added: tests/test_autonomous_teacher_flow.py to exercise profiling, offline lesson delivery, question, hint, incorrect answer, persistence, and restart.
+
+Verified in this Linux environment: 106 passed, 2 failed in full pytest suite.
+Existing failures: tests/test_api_contract.py OCR health response keys; tests/test_planner.py five-subject plan excludes Mathematics.
+Not verified: Windows launcher, live Ollama response, multimodal generation, complete syllabus, or end-to-end browser UI.
+This package is an incremental repair, NOT a finished autonomous multimodal teacher.

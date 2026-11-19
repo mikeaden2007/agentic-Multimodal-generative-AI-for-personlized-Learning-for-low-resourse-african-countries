@@ -1,0 +1,1 @@
+Extract this ZIP to a new folder. Double-click Open-AskTutor.bat in THIS folder. Python 3 and internet for initial package installation are required. Keep the two server windows open. This is a startup packaging repair, not a verified complete AI teacher.

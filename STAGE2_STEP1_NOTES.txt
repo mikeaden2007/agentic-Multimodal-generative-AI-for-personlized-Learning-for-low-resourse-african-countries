@@ -1,0 +1,26 @@
+STAGE 2 STEP 1 — Subject selection and per-subject topic progress
+
+What changed:
+- Classroom subject picker populated from the existing subject list.
+- Teacher API accepts a selected subject; no default Mathematics choice.
+- A new student starts at the first locally available topic in the chosen subject.
+- Per-subject teaching sessions and per-topic statuses are saved in the learner JSON file.
+- Completed topics are resumed past after reload; unfinished topics resume.
+- Switching subjects preserves each subject's separate place.
+
+What was tested in the development environment:
+- Python module syntax and frontend JavaScript syntax.
+- Mocked teacher sequence: subject required, switch subjects, completion, persistence, and resume.
+
+Not yet implemented / not claimed:
+- Full verified NERDC syllabus coverage (the ZIP has starter material).
+- Multimodal media generation, voice and video integration.
+- Correct pedagogical grading and teach-before-ask improvements (next step).
+- Live Windows browser validation; use the working startup commands from Stage 1.
+
+Manual verification:
+1. Start backend and frontend using the same Stage 1 commands.
+2. Open classroom, choose Mathematics, press Start / Resume Lesson.
+3. Choose another available subject, start, and verify the subject changes.
+4. Switch back to Mathematics and confirm the topic is retained.
+5. After completing a question, refresh and verify the next topic is retained.

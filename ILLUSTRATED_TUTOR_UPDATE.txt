@@ -1,0 +1,13 @@
+ASK TUTOR — ILLUSTRATED RESPONSE UPDATE (22 October 2026)
+
+The existing dashboard is retained. AI Tutor responses now display explanatory text on the left and a matching locally stored SVG educational illustration on the right (desktop). Mobile layouts stack for readability.
+
+Available topic-specific visuals in this version: Genetics and Variation, Electromagnetic Induction, quadratic equations, fractions, Solar System, photosynthesis. For other topics, no generic or unrelated illustration is shown. This is NOT an automatic image-generation service for every subject.
+
+Response text uses an Inter/Segoe UI/Arial font stack. If Inter is not installed, Windows uses Segoe UI. The Ollama tutor now requests longer responses and shows retrieved curriculum notes if the AI returns an empty response or cannot connect.
+
+All existing curriculum, login, Practice, Progress and Library files are preserved.
+
+VALIDATION: JavaScript syntax passed node --check; Python compiled; pytest: 104 passed, 2 pre-existing failures (OCR health response contract and session planner coverage). Actual Windows Ollama/OCR end-to-end verification is still needed.
+
+INSTALLATION: Keep your existing working project as backup. Extract this ZIP to a separate folder, close existing Ask Tutor server windows, run Open-AskTutor.bat, log in, and try SS3 Biology 'Explain Genetics and Variation with an example'.
